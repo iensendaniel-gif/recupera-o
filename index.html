@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026 - Agro Forte, Futuro Sustentável</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#dff6dd;
+}
+
+header{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+main{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+section{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+h2{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+button{
+    background:#43a047;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+#mensagem{
+    margin-top:20px;
+    font-size:20px;
+    color:#1b5e20;
+    font-weight:bold;
+}
+
+footer{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>🌱 AGRINHO 2026</h1>
+    <h2>Agro Forte, Futuro Sustentável</h2>
+</header>
+
+<main>
+
+<section>
+<h2>🌾 O Agro</h2>
+
+<p>
+O agronegócio produz alimentos, roupas e matérias-primas que fazem parte do
+nosso dia a dia. Com o uso da tecnologia e de práticas sustentáveis,
+é possível aumentar a produção preservando a natureza.
+</p>
+
+</section>
+
+<section>
+
+<h2>🌎 Sustentabilidade</h2>
+
+<ul>
+<li>💧 Economizar água.</li>
+<li>🌳 Preservar as florestas.</li>
+<li>🚜 Utilizar tecnologias modernas.</li>
+<li>♻️ Reduzir a poluição.</li>
+<li>🌱 Cuidar do solo.</li>
+</ul>
+
+<button onclick="mostrarMensagem()">
+Clique para descobrir o futuro!
+</button>
+
+<div id="mensagem"></div>
+
+</section>
+
+<section>
+
+<h2>🚜 Curiosidade</h2>
+
+<p id="curiosidade">
+Clique no botão abaixo para conhecer uma curiosidade sobre o agro.
+</p>
+
+<button onclick="curiosidade()">
+Mostrar Curiosidade
+</button>
+
+</section>
+
+</main>
+
+<footer>
+Projeto HTML - Agrinho 2026 | Agro Forte, Futuro Sustentável
+</footer>
+
+<script>
+
+function mostrarMensagem(){
+
+document.getElementById("mensagem").innerHTML =
+"🌿 O futuro sustentável depende da união entre agricultura, tecnologia e preservação da natureza!";
+
+}
+
+const frases = [
+
+"🌽 O Brasil está entre os maiores produtores de alimentos do mundo.",
+
+"🚜 Máquinas modernas ajudam a economizar água e combustível.",
+
+"🌱 Plantar árvores ajuda a proteger rios e animais.",
+
+"💧 A irrigação inteligente evita desperdício de água.",
+
+"🌎 Produzir com responsabilidade garante alimento para as próximas gerações."
+
+];
+
+function curiosidade(){
+
+let numero = Math.floor(Math.random()*frases.length);
+
+document.getElementById("curiosidade").innerHTML = frases[numero];
+
+}
+
+</script>
+
+</body>
+</html>
